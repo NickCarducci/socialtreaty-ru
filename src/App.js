@@ -1,4 +1,6 @@
 import React from "react";
+//import TwitterTweetEmbed from "./TwitterTweetEmbed";
+import Cable from "./Dropwire";
 import { UAParser } from "ua-parser-js";
 //DOES ANYONE WANT TO BE MY PAC BUDDY
 //great now that song "anything you can do I can do better" women can play (soccer? boy club or unisex)
@@ -75,7 +77,7 @@ export default class App extends React.Component {
     }
   };
   render() {
-    /*const handleScollImgError = (e) => {
+    const handleScollImgError = (e) => {
       if (e.message) {
         console.log(e.message);
         this.setState({ serviceCancelingImages: true });
@@ -86,7 +88,7 @@ export default class App extends React.Component {
       const num = arrayOfnumbers[arrayOfnumbers.length - 1] + 1;
       arrayOfnumbers.push(num);
       return num;
-    };*/
+    };
     //const space = " ";
     return (
       <div
@@ -135,6 +137,29 @@ export default class App extends React.Component {
         >
           Shouldn’t social security and pensions be reversed by taxing their
           benefactors?
+          <br />
+          {/*<iframe
+            src="https://froth.quora.com/"
+            title=
+          />*/}
+          <a href="https://froth.quora.com/How-much-money-does-a-country-owe-when-it-has-a-lot-of-debt-1">
+            <Cable
+              style={{ width: "100%" }}
+              onError={handleScollImgError}
+              img={true}
+              src={
+                this.state.serviceCancelingImages
+                  ? ""
+                  : "https://www.dropbox.com/s/1ydgvkgy7stt0oy/Screen%20Shot%202023-03-23%20at%205.38.51%20PM.png?raw=1"
+              }
+              float="right"
+              title="How much money does a country owe when it has a lot of debt?"
+              scrolling={this.state.scrolling}
+              fwd={this["scrollImg" + scrollnum()]}
+              scrollTopAndHeight={this.state.scrollTop + window.innerHeight}
+              scrollTop={this.state.scrollTop}
+            />
+          </a>
         </div>
       </div>
     );
