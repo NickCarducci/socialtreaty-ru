@@ -160,6 +160,8 @@ export default class App extends React.Component {
               scrollTop={this.state.scrollTop}
             />
           </a>
+          Can you surrender another's freedom to bid? Does freedom mean extra
+          product risk and duress?
         </div>
       </div>
     );
