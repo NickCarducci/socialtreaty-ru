@@ -162,6 +162,8 @@ export default class App extends React.Component {
           </a>
           Can you surrender another's freedom to bid? Does freedom mean extra
           product risk and duress?
+          <hr />
+          Should malpractice be for aware customers or charging for sutures?
         </div>
       </div>
     );
