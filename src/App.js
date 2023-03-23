@@ -75,7 +75,7 @@ export default class App extends React.Component {
     }
   };
   render() {
-    const handleScollImgError = (e) => {
+    /*const handleScollImgError = (e) => {
       if (e.message) {
         console.log(e.message);
         this.setState({ serviceCancelingImages: true });
@@ -86,8 +86,8 @@ export default class App extends React.Component {
       const num = arrayOfnumbers[arrayOfnumbers.length - 1] + 1;
       arrayOfnumbers.push(num);
       return num;
-    };
-    const space = " ";
+    };*/
+    //const space = " ";
     return (
       <div
         style={{
